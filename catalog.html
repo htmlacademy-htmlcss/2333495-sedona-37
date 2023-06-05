@@ -9,8 +9,8 @@
           <!--Header НАЧАЛО-->
 <header class="page-heder">
     <nav class="navigation">
-      <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" src="#" alt="Sedona">
+      <a class="navigation-logo" href="/index.html">
+        <img class="page-header-logo"  src="/images/logo.svg" width="140"  alt="logo Sedona" >
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -21,7 +21,7 @@
         </li>
 
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-current" href="/catalog.html">Гостиницы</a>
         </li>
       </ul>
 
@@ -31,6 +31,7 @@
             <span class="visually-hidden">
               ПОИСК
             </span>
+            <img src="/images/search.svg" width="20" height="20" alt="значок поиска" >
           </a>
         </li>
         <li class="navigation-item">
@@ -38,6 +39,7 @@
             <span  class="visually-hidden">
               ИЗБРАНОЕ
               </span>
+              <img src="/images/heart.svg" width="20" height="20" alt="значок ИЗБРАНОЕ">
           </a>
         </li>
         <li class="navigation-item">
@@ -55,8 +57,11 @@
     <ul class="breadcrumbs">
       <li class="breadcrumbs-item">
         <a class="breadcrumbs-link" href="index.html">
-            <li><img class="logo-home" src="#" alt="logo home"></li>
-            <li><img class="logo-home-strelka" src="#" alt="strelka"></li>
+            <li>
+              <a href="#"><img class="logo-home" src="#" alt="logo home"></a>
+            </li>
+            <li>
+              <a href="#"><img class="logo-home-strelka" src="#" alt="strelka"></li></a>
             <li><span>Гостиницы</span></li>
         </a>
 
@@ -125,9 +130,11 @@
       <section class="header-cash">
             <h2>Стоимость,Р:</h2>
         <form action="integer">
-            <div class="min-max">
-              <input type="text" id="fname" name="fname" placeholder="от" >
-             <input type="text" id="lname" name="lname"  placeholder="до">
+            <div class="input-block">
+              <input class="input-block-input" type="number"  placeholder="0" >
+              <span class="input-block-symbol">от</span>
+              <input class="input-block-input" type="number"  placeholder="9000" >
+              <span class="input-block-symbol">до</span>
             </div>
           <div class="button">
             <button class="button-apply" type="submit">Применить</button>
@@ -143,22 +150,35 @@
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвое</option>
           <option value="popular">Сначала популярное</option>
+          <img src="/images/catalog/down.svg" width="12" alt="выбор сортировки">
         </select>
 
         <!-- изменение вида -->
-        <ul class="button-list">
-          <li class="button-list-item">
-            <button class="button-card-active" type="button">
-            <h2 class="catalog-title">Найдено гостиниц: 38</h2>
-            </button>
+        <ul class="view-control">
+          <li class="view-control-item">
+            <a  class="button button-light" href="#">
+             <img src="/images/catalog/plitka.svg" width="16" height="14" alt="табличный вид ">
+            </a>
           </li>
+
+            <li class="view-control-item">
+              <a  class="button " href="#">
+                <img src="/images/catalog/stroka.svg" alt="блочный вид">
+            </li>
+
+            <li class="view-control-item">
+              <a  class="button " href="#">
+                <img src="/images/catalog/spisok.svg" alt="списочнй  вид">
+            </li>
+
         </ul>
+
 
         <!--каталог-->
         <ul class="card-list">
           <li class="card-list-item">
             <a class="card-list-link" href="#">
-            <img src="#" alt="Amara Resort & Spa">
+            <img src="/images/catalog/Amara Resort & Spa.jpg" width="300" height="212" alt="Amara Resort & Spa">
             <h3 class="card-list-title">Amara Resort & Spa</h3>
             </a>
             <p class="card-price">
@@ -175,7 +195,7 @@
 
           <li class="card-list-item">
             <a class="card-list-link" href="#">
-            <img src="#" alt="Villas at Poco Diablo">
+            <img src="/images/catalog/Villas at Poco Diablo.jpg" width="300" height="212" alt="Villas at Poco Diablo">
             <h3 class="card-list-title">Villas at Poco Diablo</h3>
             </a>
             <p class="card-price">
@@ -184,7 +204,7 @@
             </p>
             <button class="button_more">Подробнее</button>
             <button class="button button-favorites button-active" type="button">
-              <span>В Избранноe</span>
+              <span>В Избранном</span>
             </button>
             <span class="visually-hidden">Уровень рейтинга</span>
             <span class="rating">Рейтинг: 9,2</span>
@@ -192,7 +212,7 @@
 
           <li class="card-list-item">
             <a class="card-list-link" href="#">
-            <img src="#" alt="Desert Quail Inn">
+            <img src="/images/catalog/Desert Quail Inn.jpg" width="300" height="212" alt="Desert Quail Inn">
             <h3 class="card-list-title">Desert Quail Inn</h3>
             </a>
             <p class="card-price">
@@ -209,7 +229,7 @@
 
           <li class="card-list-item">
             <a class="card-list-link" href="#">
-            <img src="#" alt="GreenTree Inn">
+            <img src="/images/catalog/GreenTree Inn.jpg" width="300" height="212" alt="GreenTree Inn">
             <h3 class="card-list-title">GreenTree Inn</h3>
             </a>
             <p class="card-price">
@@ -278,17 +298,21 @@
             <footer class="footer">
               <div class="footer_link">
                 <a href="https://vk.com/feed">
-                  <img src="vk.svg" alt="vk">
-                </a>
-                <a href="youtube.com">
-                  <img src="youtube.svg" alt="youtube">
+                  <img src="/images/vk.svg" width="22" height="17" alt="vk">
                 </a>
                 <a href="#">
-                  <img src="telegram.svg" alt="telegram">
+                  <img src="/images/telegram.svg" width="22" height="17" alt="telegram">
+                </a>
+                <a href="youtube.com">
+                  <img src="/images/youtube.svg" width="22" height="17" alt="youtube">
                 </a>
               </div>
-              <div>+7 (812) 812-12-12</div>
-              <div>
-                <img class="logo_footer" src="#" alt="HTML Academiya">
+              <div class="telephone-nunber">
+                <a href="">+7 (812) 812-12-12</a>
               </div>
+              <div>
+                <img class="logo_footer" src="/images/HTML Academy.svg" width="115" height="33" alt="HTML Academiya">
+              </div>
+            </footer>
+
             </footer>
