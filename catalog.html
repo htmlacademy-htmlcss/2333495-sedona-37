@@ -4,39 +4,48 @@
     <meta charset="utf-8">
     <title>Каталог: Седона </title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" type="image" sizes="128x128" href="images/logo.svg">
   </head>
   <body>
 
               <!--Header НАЧАЛО-->
 
     <div class="containier">
-      <header class="page-header" data-test="header">
-        <a  class="header-logo-link" href="index.html">
-          <img class="logo" src="images/logo.svg" width="140" height="70px" alt="logo Sedona">
-        </a>
+      <header class="page-header">
         <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+          <div class="page-navigation">
+            <a href="index.html">
+              <img class="logo-sedona" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
+            </a>
+            <ul class="page-menu">
+              <li class="page-menu-item ">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="page-menu-item">
+                <a href="#">  О Седоне  </a>
+              </li>
+              <li class="page-menu-item page-first">
+                <a href="catalog.html" >  Гостиницы</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="user-menu">
+            <li>
+              <ul class="user-menu-item-box">
+                <li class="user-menu-item">
+                  <a class="img-glass" href="#"></a>
+                </li>
+                <li class="user-menu-item">
+                  <a class="img-heart" href="#"></a>
+                </li>
+              </ul>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">О Cедоне</a>
-            </li>
-            <li class="navigation-item-current">
-              <a class="navigation-link-current" href="#">Гостиницы</a>
+            <li class="user-menu-item">
+              <a class="button button-catalog" href="/">Хочу сюда! </a>
             </li>
           </ul>
-          <div class="navigation-buttons">
-            <a class="" href="#">
-              <img src="images/search.svg"  alt="значок поиска" >
-            </a>
-            <a class="" href="#">
-              <img src="images/heart.svg" alt="значок ИЗБРАНОЕ">
-            </a>
-            <div class="navigation-user-list-item">
-              <a class="navigation-user-link navigation-link-button button" href="">Хочу сюда!</a>
-            </div>
-          </div>
         </nav>
       </header>
 
@@ -50,11 +59,11 @@
               <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link" href="index.html">
-                    <img class="logo-home" src="/images/catalog/ home-logo-Vector.svg"  width="13px" height="15px" alt="logo home">
+                    <img class="logo-home" src="./images/catalog/ home-logo-Vector.svg"  width="13px" height="15px" alt="logo home">
                   </a>
                 </li>
                 <li class="breadcrumbs-arrow">
-                  <img src="/images/catalog/icons/Vector.svg"  width="6px" height="19px" alt="/">
+                  <img src="./images/catalog/icons/Vector.svg"  width="6px" height="19px" alt="/">
                 </li>
                 <li class="breadcrumbs-current"><span>Гостиницы</span></li>
               </ul>
@@ -140,7 +149,7 @@
                     </div>
                   </div>
                     <div class="button-cash">
-                      <button class="button-apply block-button" type="submit">Применить</button>
+                      <button class="button-apply block-button blue-button" type="submit">Применить</button>
                       <button class="button-reset block-button" name="reset">Сбросить</button>
                     </div>
 
@@ -159,7 +168,7 @@
                       <option class="select-control-option" value="cheap">Сначала дешёвое</option>
                       <option  class="select-control-option" value="popular">Сначала популярное</option>
                       <option  class="select-control-option" value="expensive">Сначала дорогие</option>
-                      <img src="/images/catalog/down.svg" width="12" alt="выбор сортировки">
+                      <img src="./images/catalog/down.svg" width="12" alt="выбор сортировки">
                     </select>
                   </div>
 
@@ -168,14 +177,14 @@
                  <div class="containier-button-view">
                     <a  class="button-view current block-button" href="#">
                       <span class="visually-hidden">табличный вид </span>
-                      <img class="view" src="/images/catalog/plitka.svg" width="16" height="14" alt="табличный вид ">
+                      <img class="view" src="./images/catalog/plitka.svg" width="16" height="14" alt="табличный вид ">
                     </a>
                     <a  class="button-view block-button" href="#">
-                      <img  class="view" src="/images/catalog/stroka.svg" width="16" height="14" alt="/">
+                      <img  class="view" src="./images/catalog/stroka.svg" width="16" height="14" alt="/">
                       <span class="visually-hidden">строчный вид</span>
                     </a>
                     <a  class="button-view block-button" href="#">
-                      <img class="view" src="/images/catalog/spisok.svg" width="16" height="14" alt="/">
+                      <img class="view" src="./images/catalog/spisok.svg" width="16" height="14" alt="/">
                       <span class="visually-hidden">Список</span>
                     </a>
                   </div>
@@ -188,7 +197,7 @@
 
               <div class="containier-catalog-view">
                   <div class="list-hotel">
-                    <img class="hotel-photo" src="/images/catalog/Amara Resort & Spa.jpg" width="300" height="212" alt="Amara Resort & Spa">
+                    <img class="hotel-photo" src="./images/catalog/Amara Resort & Spa.jpg" width="300" height="212" alt="Amara Resort & Spa">
                       <h3 class="card-list-title" href="#">Amara Resort & Spa</h3>
                       <span class="name">Гостиница</span>
                       <span class="price">От 4000 ₽</span>
@@ -196,11 +205,11 @@
                       <button class="button-favourite block-button" type="button">
                         В избранное
                       </button>
-                      <img src="/images/catalog/4stars.svg" alt="4stars">
+                      <img src="./images/catalog/4stars.svg" alt="4stars">
                       <span class="button-rating"> Рейтинг: 8,5</span>
                     </div>
                     <div class="list-hotel">
-                      <img class="hotel-photo" src="/images/catalog/Villas at Poco Diablo.jpg" width="300" height="212" alt="Villas at Poco Diablo">
+                      <img class="hotel-photo" src="./images/catalog/Villas at Poco Diablo.jpg" width="300" height="212" alt="Villas at Poco Diablo">
                        <h3 class="card-list-title" href="#">Villas at Poco Diablo</h3>
                        <span class="name">Гостиница</span>
                       <span class="price">От 5000 ₽</span>
@@ -208,11 +217,11 @@
                       <button class="button-favourite-green block-button" type="button">
                         В избранном
                       </button>
-                       <img src="/images/catalog/4stars.svg" alt="4stars">
+                       <img src="./images/catalog/4stars.svg" alt="4stars">
                       <span class="button-rating"> Рейтинг: 9,2</span>
                     </div>
                   <div class="list-hotel">
-                    <img class="hotel-photo" src="/images/catalog/Desert Quail Inn.jpg" width="300" height="212" alt="Desert Quail Inn">
+                    <img class="hotel-photo" src="./images/catalog/Desert Quail Inn.jpg" width="300" height="212" alt="Desert Quail Inn">
                     <h3 class="card-list-title" href="#">Desert Quail Inn</h3>
                     <span class="name">Гостиница</span>
                     <span class="price">От 2500 ₽</span>
@@ -220,11 +229,11 @@
                     <button class="button-favourite block-button" type="button">
                       В избранное
                     </button>
-                    <img src="/images/catalog/3stars.svg" alt="3stars">
+                    <img src="./images/catalog/3stars.svg" alt="3stars">
                     <span class="button-rating"> Рейтинг: 6,9</span>
                   </div>
                   <div class="list-hotel">
-                    <img class="hotel-photo" src="/images/catalog/GreenTree Inn.jpg" width="300" height="212" alt="GreenTree Inn">
+                    <img class="hotel-photo" src="./images/catalog/GreenTree Inn.jpg" width="300" height="212" alt="GreenTree Inn">
                     <h3 class="card-list-title" href="#">GreenTree Inn</h3>
                     <span class="name">Гостиница</span>
                     <span class="price">От 1500 ₽</span>
@@ -232,7 +241,7 @@
                     <button class="button-favourite block-button" type="button">
                         В избранное
                     </button>
-                  <img src="/images/catalog/2stars.svg" alt="2stars">
+                  <img src="./images/catalog/2stars.svg" alt="2stars">
                   <span class="button-rating"> Рейтинг: 5,0</span>
                 </div>
               </div>
@@ -274,12 +283,10 @@
       <section class="catalog-subscribe" data-test="subscribe">
         <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
         <p class="subscribe-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-form" action="">
-          <label class="for-label" for="">
-            <div class="input-block">
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
+          <label class="block-label">
              <input class="input-block-input" placeholder="Ваш email" type="text">
-              <button class="input-block-symbol">Подписаться</button>
-            </div>
+              <p class="input-block-symbol blue-button">Подписаться</p>
             </label>
           </form>
         </section>

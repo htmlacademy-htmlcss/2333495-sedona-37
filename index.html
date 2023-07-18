@@ -4,43 +4,48 @@
     <meta charset="utf-8">
     <title>Главная страница: Седона </title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" type="image" sizes="128x128" href="images/logo.svg">
+    <link rel="icon"  sizes="128x128" href="images/logo.svg">
   </head>
 
   <body>
     <div class="containier">
-      <!--Header НАЧАЛО-->
-      <header class="page-header" data-test="header">
-        <a class="header-logo-link" href="#">
-          <img class="logo" src="images/logo.svg" width="140" height="70px" alt="logo Sedona">
-        </a>
+      <header class="page-header">
         <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item-current">
-              <a class="navigation-link-current" href="#">Главная</a>
+          <div class="page-navigation">
+            <a href="index.html">
+              <img class="logo-sedona" src="images/logo.svg" width="140" height="70" alt="Логотип города Седона">
+            </a>
+            <ul class="page-menu">
+              <li class="page-menu-item page-first">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="page-menu-item">
+                <a href="#">  О Седоне  </a>
+              </li>
+              <li class="page-menu-item">
+                <a href="catalog.html">  Гостиницы</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="user-menu">
+            <li>
+              <ul class="user-menu-item-box">
+                <li class="user-menu-item">
+                  <a class="img-glass" href="#"></a>
+                </li>
+                <li class="user-menu-item">
+                  <a class="img-heart" href="#"></a>
+                </li>
+              </ul>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">О Cедоне</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <li class="user-menu-item">
+              <a class="button button-catalog" href="catalog.html">Хочу сюда! </a>
             </li>
           </ul>
-          <div class="navigation-buttons">
-            <a class="" href="#">
-              <img src="images/search.svg"  alt="значок поиска" >
-            </a>
-            <a class="" href="#">
-              <img src="images/heart.svg" alt="значок ИЗБРАНОЕ">
-            </a>
-            <div class="navigation-user-list-item">
-              <a class="navigation-user-link navigation-link-button button" href="">Хочу сюда!</a>
-            </div>
-          </div>
         </nav>
       </header>
-      <!--HEADER Конец-->
-
       <!--main начало-->
 
       <main class="main-index" data-test="main">
@@ -57,23 +62,22 @@
           <ul class="advantages-list">
             <li class="advantage-item-background-blue">
               <div class="advantages-description-container">
-                <p class="advantages-title-blue">настоящий городок</p>
+                  <h3 class="advantages-title-blue">настоящий городок</h3>
                 <p class="advantages-description-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="real-town_pic" src="images/dom-sedona.jpg" width="800px"  alt=" достопримечательсть Sedona">
+              <img class="real-town_pic" src="images/dom-sedona.jpg" width="800"  alt=" достопримечательсть Sedona">
             </li>
             <div class="advantages-block">
               <li class="advantages-description-container light">
-                <p class="advantages-title black-text"> Небольшая площадь</p>
+                  <h3 class="advantages-title black-text"> Небольшая площадь</h3>
                 <p class="advantages-description-text black-grey-text">Все достопримечательности находятся очень близко</p>
               </li>
               <li class="advantages-description-container blue-light">
-                <p class="advantages-title black-text"> Красивая <br> дорога</p>
+                <h3 class="advantages-title black-text"> Красивая <br> дорога</h3>
                 <p class="advantages-description-text black-grey-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
-
               <li class="advantages-description-container light">
-                <p class="advantages-title black-text"> Мало <br> туристов</p>
+                  <h3 class="advantages-title black-text"> Мало <br> туристов</h3>
                 <p class="advantages-description-text black-grey-text">Большинство едет в Гранд Каньон и толпится там</p>
               </li>
             </div>
@@ -93,7 +97,7 @@
 
           <section class="services">
             <ul class="services-home">
-              <div class="services-block">
+              <section class="services-block">
                 <li class="services-block-item blue-light">
                   <img class="services-block-item-img" src="images/logo-home.svg" width="75" height="72" alt="Жилье">
                   <p class="services-block-item-title black-tex"> ЖИЛЬЁ</p>
@@ -113,7 +117,7 @@
                   <p class="services-block-item-subtitle black-grey-text">Не только китайского,<br> но и настоящего местного <br>производства!</p>
 
                 </li>
-              </div>
+          </section>
 
             </ul>
           </section>
@@ -129,12 +133,10 @@
       <section class="subscribe subscribe-block" data-test="subscribe">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscribe-form" action="">
-          <label class="for-label" for="">
-            <div class="input-block">
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/">
+          <label class="block-label">
               <input class="input-block-input" placeholder="Ваш email" type="text">
-              <button class="input-block-symbol " >Подписаться</button>
-            </div>
+              <p class="input-block-symbol " >Подписаться</p>
           </label>
         </form>
       </section>
@@ -186,10 +188,10 @@
             <span class="wrong-date"> Мы не можем отправить вас в прошлое. </span>
           </label>
           <label class="departure-date" >
-          <div class="modal-block-input departure-input">
+          <section class="modal-block-input departure-input">
             <p class="subtitle-date text-modal-black">Дата выезда:</p>
             <input class="example-input" type="text" name="arrival-date" placeholder="1 сентября 2023" onfocus="xcnkcndkcnvdkcndklvndlkv" required>
-          </div>
+          </section>
             <span class="free-date modal-date">На эти даты есть свободные номера. Пока есть.</span>
           </label>
           <div class="input-number-people">
