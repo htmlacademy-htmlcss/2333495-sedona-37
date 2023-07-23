@@ -223,7 +223,6 @@ cursor: pointer;
 .button-apply:active{
   opacity: 0.8;
 }
-
 .button-favourite:hover{
   background-color: #3b84b4;
 }
@@ -249,7 +248,6 @@ cursor: pointer;
 .button:focus {
   background-color: #615048;
 }
-
 .button:active {
   color: rgba(255, 255, 255, 0.3);
 }
@@ -279,7 +277,6 @@ cursor: pointer;
   align-items: center;
   justify-content: center;
   min-width: 44px;
-
   position: relative;
 }
 .hero{
@@ -645,7 +642,7 @@ line-height: 40px;
 .popup-close-button::before{
   width: 20px;
   height: 20px;
-  content: url(/images/modal/cross.svg);
+  content: url(../images/modal/cross.svg);
 }
 .popup-close-button:hover{
   background: #E6E6E6;
@@ -663,7 +660,6 @@ opacity: 0.5;
   font-weight: 700;
   line-height: 36px;
   margin: 0 0 66px;
-
 }
 .arrival-date-1, .departure-date{
   display: flex;
@@ -693,7 +689,7 @@ opacity: 0.5;
   margin-bottom: 1px;
   border: none;
   border-radius: 4px;
-  background-image: url(/images/modal/date.svg);
+  background-image: url(../images/modal/date.svg);
   background-repeat: no-repeat;
   background-position: right 20px center;
   font-size: 18px;
@@ -715,7 +711,6 @@ opacity: 0.5;
 }
 .number-person{
   display: flex;
-
 }
 .quantity{
   background-color: #F2F2F2;
@@ -747,7 +742,6 @@ margin-right: 46px;
   margin-bottom: 23px;
   display: block;
 }
-
 .quantity{
   padding: 14px 10px;
   text-align: center;
@@ -756,8 +750,8 @@ margin-right: 46px;
   font-weight: 700;
   line-height: 20px;
   width: 31px;
-    height: 48px;
-    box-sizing: border-box;
+  height: 48px;
+  box-sizing: border-box;
 }
 .input-minus,
 .input-plus{
@@ -830,7 +824,6 @@ margin-right: 46px;
 span{
   display: block;
 }
-
 /* КАТАЛОГ */
 legend, input{
   margin: 0;
@@ -842,7 +835,6 @@ legend, input{
   padding: 35px 70px 70px 70px;
   box-sizing: border-box;
   height: 412px;
-
 }
 .hotel-catalog-title{
   margin: 0;
@@ -894,7 +886,6 @@ legend, input{
 }
 .containier-filter-group{
   display: flex;
-
 }
 .catalog-filter-group{
   border: none;
@@ -926,7 +917,6 @@ cursor: pointer;
   background-position: center;
   background-size: 28px 28px;
 }
-
 .control{
   display: flex;
   align-items: center;
@@ -1006,7 +996,6 @@ outline: none;
 }
 .containier-input-block{
   display: flex;
-
 }
 .catalog-input-block {
   display: flex;
@@ -1021,11 +1010,9 @@ outline: none;
   margin-left: 1px;
   border-radius: 0 4px 4px 0;
 }
-
 .catalog-input-block-input{
   border: none;
 }
-
 .catalog-input-block-text{
   opacity: 0.30000001192092896;
   font-size: 18px;
@@ -1047,9 +1034,7 @@ outline: none;
   width: 18px;
   height: 18px;
   border-radius: 4px;
-
 }
-
 .block{
   display: block;
   width: 191px;
@@ -1155,12 +1140,10 @@ outline: none;
   display: flex;
   align-items: center;
 }
-
 .select-control-block::after {
   position: absolute;
   display: flex;
   right: 90px;
-
 }
 .select-control{
   align-items: center;
@@ -1187,10 +1170,7 @@ outline: none;
   display: grid;
   grid-template-columns: repeat(3,340px);
   gap: 15px 20px;
-
 }
-
-
 .list-hotel{
   display: grid;
   grid-template-columns: repeat(2, 140px);
@@ -1205,7 +1185,6 @@ border: 1px solid #E6E6E6;
   grid-column: 2 span;
   object-fit: contain;
   width: 300px;
-
 }
 .card-list-title{
   font-size: 24px;
@@ -1213,8 +1192,6 @@ border: 1px solid #E6E6E6;
   margin: 0;
   grid-column: 2 span;
 }
-
-
 .subscribe{
   font-size: 24px;
   font-weight: 700;
@@ -1223,14 +1200,12 @@ border: 1px solid #E6E6E6;
   color: #000;
 
 }
-
 .name{
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   width: 140px;
   }
-
 .price{
   font-size: 18px;
   font-weight: 400;
@@ -1238,7 +1213,6 @@ border: 1px solid #E6E6E6;
   width: 140px;
   text-align: right;
   }
-
 .button-more{
   border-radius: 4px;
   background: #756157;
@@ -1249,9 +1223,7 @@ border: 1px solid #E6E6E6;
   line-height: 20px;
   text-transform: uppercase;
   padding: 8px 25px;
-
 }
-
 .button-favourite{
   border-radius: 4px;
   background: #82B3D3;
@@ -1277,10 +1249,7 @@ border: 1px solid #E6E6E6;
   min-width: 140px;
   border: none;
   font-family: inherit;
-
 }
-
-
 .button-rating{
   border: none;
   box-sizing: border-box;
@@ -1296,7 +1265,6 @@ border: 1px solid #E6E6E6;
   align-items: center;
   justify-content: center;
 }
-
 /* pagination */
 .pagination-item:not(:last-child) {
   margin-right: 8px;
@@ -1331,14 +1299,12 @@ border: 1px solid #E6E6E6;
 .pagination-active{
   background-color: #f3f3f3;
   color: #000;
-
 }
 .link-white{
   background-color: #f3f3f3;
   color:#000
 }
 /* subscribe */
-
 .subscribe-title-catalog{
   font-size: 30px;
  font-weight: 700;
