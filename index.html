@@ -9,11 +9,11 @@
   <body>
     <div class="containier">
       <header class="page-header">
+        <a class="logo-link" href="index.html">
+          <img class="logo-sedona" src="images/logo.svg" width="140" height="70" alt="Логотип Седона.">
+        </a>
         <nav class="navigation">
           <div class="page-navigation">
-            <a class="logo-link" href="index.html">
-              <img class="logo-sedona" src="images/logo.svg" width="140" height="70" alt="Логотип Седона.">
-            </a>
             <ul class="page-menu reset" >
               <li class="page-menu-item page-first reset">
                 <a href="index.html">
@@ -28,29 +28,26 @@
               </li>
             </ul>
           </div>
+
           <ul class="user-menu reset">
-            <li class="reset">
-              <ul class="user-menu-item-box reset">
-                <li class="user-menu-item reset">
-                  <a class="img-glass" href="#" >
-                    <span class="visually-hidden">
-                      поиск  на странице.
-                    </span>
-                  </a>
-                </li>
-                <li class="user-menu-item reset">
-                  <a class="img-heart" href="#">
-                    <span class="visually-hidden">
-                      Добавить в избранное.
-                    </span>
-                  </a>
-                </li>
-              </ul>
+            <li class="user-menu-item reset">
+              <a class="img-glass" href="#" >
+                <span class="visually-hidden">
+                  поиск  на странице.
+                </span>
+              </a>
             </li>
             <li class="user-menu-item reset">
-              <a class="button button-catalog" href="catalog.html">Хочу сюда! </a>
+              <a class="img-heart" href="#">
+                <span class="visually-hidden">
+                  Добавить в избранное.
+                </span>
+              </a>
             </li>
           </ul>
+          <div class="user-menu-item-button reset">
+              <a class="button button-catalog" href="catalog.html">Хочу сюда! </a>
+          </div>
         </nav>
       </header>
       <!--main начало-->
@@ -61,8 +58,8 @@
           </div>
         <section class="advantages" data-test="advantages">
           <div class="reasons">
-            <span class="reasons-header">Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</span>
-            <span class="reasons-header_description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</span>
+            <span class="reasons-header block-reset">Седона — небольшой городок в Аризоне, <br> заслуживающий большего!</span>
+            <span class="reasons-header_description block-reset">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</span>
           </div>
           <h2 class="visually-hidden">преимущества</h2>
           <ul class="advantages-list reset">
@@ -71,26 +68,24 @@
                   <h3 class="advantages-title-blue reset">настоящий городок</h3>
                 <p class="advantages-description-text reset">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="real-town_pic" src="images/dom-sedona.jpg" width="800" height="385" alt=" достопримечательсть Sedona.">
+              <div>
+                <img class="real-town-pic" src="images/dom-sedona.jpg" width="800" height="385" alt=" достопримечательсть Sedona.">
+              </div>
             </li>
-          </ul>
-          <ul class="advantages-block reset">
-              <li class="advantages-description-container light reset">
-                  <h3 class="advantages-title black-text reset"> Небольшая площадь</h3>
-                <p class="advantages-description-text black-grey-text reset">Все достопримечательности находятся очень близко</p>
-              </li>
-              <li class="advantages-description-container blue-light reset">
-                <h3 class="advantages-title black-text reset"> Красивая <br> дорога</h3>
-                <p class="advantages-description-text black-grey-text  reset">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-              </li>
-              <li class="advantages-description-container light reset">
-                  <h3 class="advantages-title black-text reset"> Мало <br> туристов</h3>
-                <p class="advantages-description-text black-grey-text reset">Большинство едет в Гранд Каньон и толпится там</p>
-              </li>
-          </ul>
-          <ul class="reset">
+            <li class="advantages-description-container light reset">
+              <h3 class="advantages-title black-text reset"> Небольшая площадь</h3>
+              <p class="advantages-description-text black-grey-text reset">Все достопримечательности находятся очень близко</p>
+            </li>
+            <li class="advantages-description-container blue-light reset">
+              <h3 class="advantages-title black-text reset"> Красивая <br> дорога</h3>
+              <p class="advantages-description-text black-grey-text  reset">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </li>
+            <li class="advantages-description-container light reset">
+                <h3 class="advantages-title black-text reset"> Мало <br> туристов</h3>
+              <p class="advantages-description-text black-grey-text reset">Большинство едет в Гранд Каньон и толпится там</p>
+            </li>
             <li class="advantage-item-background-blue reset">
-              <img class="real-town_pic" src="images/photo-2-canyon.jpg" width="800" height="385" alt=" Каньон.">
+              <img class="real-town-pic" src="images/photo-2-canyon.jpg" width="800" height="385" alt=" Каньон.">
               <div class="advantage-item-background-blue-block">
                 <p class="advantages-title-blue reset">там есть <br> мост дьявола</p>
                 <p class="advantages-description-text reset">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -133,9 +128,9 @@
         <p class="subscribe-description reset">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label>
-              <input class="input-block-input" name="e-mail" placeholder="Ваш e-mail" type="text" required>
+              <input class="input-block-input reset" name="e-mail" placeholder="Ваш e-mail" type="text" required>
           </label>
-          <button class="input-block-symbol" type="submit">Подписаться</button>
+          <button class="input-block-symbol reset" type="submit">Подписаться</button>
         </form>
       </section>
       <!-- MAIN конец-->
@@ -176,32 +171,32 @@
         </button>
         <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="arrival-date-1 reset" >
-            <span class="subtitle-date text-modal-black reset">Дата Заезда:</span>
+            <span class="subtitle-date text-modal-black block-reset">Дата Заезда:</span>
             <input class="example-input reset" type="text"  name="arrival-date" placeholder="27 апреля 2020" >
           </label>
-          <span class="wrong-date">Мы не можем отправить вас в прошлое.</span>
+          <span class="wrong-date block-reset">Мы не можем отправить вас в прошлое.</span>
           <label class="departure-date reset">
-            <span class="subtitle-date text-modal-black">Дата Выезда:</span>
-            <input class="example-input reset" type="text" name="arrival-date" placeholder="1 сентября 2023">
+            <span class="subtitle-date text-modal-black block-reset">Дата Выезда:</span>
+            <input class="example-input reset" type="text" name="departure-date" placeholder="1 сентября 2023">
           </label>
-          <span class="free-date modal-date">На эти даты есть свободные номера. Пока есть.</span>
-          <div class="input-number-people">
+          <span class="free-date modal-date block-reset">На эти даты есть свободные номера. Пока есть.</span>
+          <div class="input-number-people reset">
             <label class="number-person">
-              <span class="quantity-title text-modal-black">Взрослые:</span>
-              <img class="input-minus " src="images/modal/button-minus.svg" alt="уменьшение количества взрослых.">
-              <input class="quantity" type="number" value="2" min="0" max="99">
-              <img class="input-plus" src="images/modal/button-plus.svg" alt="увеличение количества взрослых.">
+              <span class="quantity-title text-modal-black block-reset">Взрослые:</span>
+              <img class="input-minus" src="images/modal/button-minus.svg" width="20" height="20" alt="уменьшение количества взрослых.">
+              <input class="quantity reset" type="number" name="quantity" value="2" min="0" max="99" required>
+              <img class="input-plus" src="images/modal/button-plus.svg" width="20" height="20" alt="увеличение количества взрослых.">
             </label>
             <label class="number-person">
-              <span class="quantity-title-children text-modal-black">Дети:</span>
-              <span onmouseover="showInformation()" onmouseout="closeInformation()" class="children-information-icon">
-                <img src="images/modal/children-information-icon.svg" alt="Information.">
+              <span class="quantity-title-children text-modal-black block-reset">Дети:</span>
+              <span onmouseover="showInformation()" onmouseout="closeInformation()" class="children-information-icon block-reset">
+                <img src="images/modal/children-information-icon.svg" width="26" height="26" alt="Information.">
               </span>
-              <span  class="information-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+              <span  class="information-text block-reset">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
               </span>
-              <img class="input-minus" src="images/modal/button-minus.svg" alt="уменьшение количества детей.">
-              <input class="quantity" type="number" value="2" min="0" max="99">
-              <img class="input-plus" src="images/modal/button-plus.svg" alt="уменьшение количества детей.">
+              <img class="input-minus" src="images/modal/button-minus.svg" width="20" height="20" alt="уменьшение количества детей.">
+              <input class="quantity reset"  type="number" name="qty-children"  value="2" min="0" max="99" required>
+              <img class="input-plus" src="images/modal/button-plus.svg" width="20" height="20" alt="уменьшение количества детей.">
             </label>
           </div>
           <button type="submit" class="search-button-modal">Найти</button>

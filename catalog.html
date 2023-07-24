@@ -7,16 +7,16 @@
     <link rel="icon" href="favicon.ico">
   </head>
   <body>
-              <!--Header НАЧАЛО-->
+    <!--Header НАЧАЛО-->
     <div class="containier">
       <header class="page-header">
+        <a class="logo-link" href="index.html">
+          <img class="logo-sedona" src="images/logo.svg" width="140" height="70" alt="Логотип Седона.">
+        </a>
         <nav class="navigation">
           <div class="page-navigation">
-            <a class="logo-link" href="index.html">
-              <img class="logo-sedona" src="images/logo.svg" width="140" height="70" alt="Логотип Седона.">
-            </a>
-            <ul class="page-menu reset">
-              <li class="page-menu-item reset">
+            <ul class="page-menu reset" >
+              <li class="page-menu-item  reset">
                 <a href="index.html">
                   Главная
                 </a>
@@ -25,33 +25,30 @@
                 <a href="#">  О Седоне  </a>
               </li>
               <li class="page-menu-item page-first reset">
-                <a href="catalog.html" >  Гостиницы</a>
+                <a href="catalog.html">Гостиницы</a>
               </li>
             </ul>
           </div>
+
           <ul class="user-menu reset">
-            <li class="reset">
-              <ul class="user-menu-item-box reset">
-                <li class="user-menu-item reset">
-                  <a class="img-glass" href="#" >
-                    <span class="visually-hidden">
-                      поиск  на странице.
-                    </span>
-                  </a>
-                </li>
-                <li class="user-menu-item reset">
-                  <a class="img-heart" href="#">
-                    <span class="visually-hidden">
-                      Добавить в избранное.
-                    </span>
-                  </a>
-                </li>
-              </ul>
+            <li class="user-menu-item reset">
+              <a class="img-glass" href="#" >
+                <span class="visually-hidden">
+                  поиск  на странице.
+                </span>
+              </a>
             </li>
             <li class="user-menu-item reset">
-              <a class="button button-catalog" href="/">Хочу сюда! </a>
+              <a class="img-heart" href="#">
+                <span class="visually-hidden">
+                  Добавить в избранное.
+                </span>
+              </a>
             </li>
           </ul>
+          <div class="user-menu-item-button reset">
+              <a class="button button-catalog" href="catalog.html">Хочу сюда! </a>
+          </div>
         </nav>
       </header>
       <!-- main catalog start-->
@@ -62,13 +59,13 @@
               <ul class="breadcrumbs reset">
                 <li class="breadcrumbs-item reset">
                   <a class="breadcrumbs-link" href="index.html">
-                    <img class="logo-home" src="images/catalog/ home-logo-Vector.svg"  width="13" height="15" alt="logo home.">
+                    <img class="logo-home" src="images/catalog/home-logo.svg"  width="13" height="15" alt="logo home.">
                   </a>
                 </li>
                 <li class="breadcrumbs-arrow reset">
                   <img class="breadcrumbs-img" src="images/catalog/breadcrumbs.svg"  width="6" height="19" alt="переход на страницу.">
                 </li>
-                <li class="breadcrumbs-current"><span>Гостиницы</span></li>
+                <li class="breadcrumbs-current"><span class="block-reset">Гостиницы</span></li>
               </ul>
             </section>
                           <!-- начало формы с фильтрами -->
@@ -77,47 +74,47 @@
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="containier-filter-group">
                   <fieldset class="catalog-filter-group">
-                    <legend class="catalog-filter-title">Инфраскруктура:</legend>
+                    <legend class="catalog-filter-title reset">Инфраскруктура:</legend>
                     <ul class="reset">
                       <li class="input-block-sorting reset">
                         <label class="control">
-                          <input class="control-input " type="checkbox" name="Бассейн">
-                          <span class="control-label">Бассейн</span>
+                          <input class="control-input reset" type="checkbox" name="Бассейн">
+                          <span class="control-label block-reset">Бассейн</span>
                           </label>
                       </li>
                       <li class="input-block-sorting reset">
                         <label class="control">
-                          <input class="control-input" type="checkbox" name="parking">
-                          <span class="control-label">Парковка</span>
+                          <input class="control-input reset" type="checkbox" name="parking">
+                          <span class="control-label block-reset">Парковка</span>
                           </label>
                       </li>
                       <li class="input-block-sorting reset">
                         <label class="control">
-                        <input class="control-input" type="checkbox" name="wi-fi">
-                        <span class="control-label">Wi-Fi</span>
+                        <input class="control-input reset" type="checkbox" name="wi-fi">
+                        <span class="control-label block-reset">Wi-Fi</span>
                         </label>
                       </li>
                     </ul>
                   </fieldset>
                   <fieldset class="catalog-filter-housing">
-                    <legend class="catalog-filter-title">Тип жилья:</legend>
+                    <legend class="catalog-filter-title reset">Тип жилья:</legend>
                       <ul class="reset">
                         <li class="input-block-sorting reset">
                           <label class="control">
-                          <input class="control-input-radio" type="radio" name="type of housing" value="hotel">
-                          <span class="control-label">Гостиница</span>
+                          <input class="control-input-radio reset" type="radio" name="type of housing" value="hotel">
+                          <span class="control-label block-reset">Гостиница</span>
                           </label>
                         </li>
                         <li class="input-block-sorting reset">
                           <label class="control">
-                            <input class="control-input-radio" type="radio" name="type of housing" value="motel">
-                            <span class="control-label">Мотель</span>
+                            <input class="control-input-radio reset" type="radio" name="type of housing" value="motel">
+                            <span class="control-label block-reset">Мотель</span>
                           </label>
                         </li>
                         <li class="input-block-sorting reset">
                           <label class="control">
-                            <input class="control-input-radio" type="radio" name="type of housing" value="apartments">
-                            <span class="control-label">Апартаменты</span>
+                            <input class="control-input-radio reset" type="radio" name="type of housing" value="apartments">
+                            <span class="control-label block-reset">Апартаменты</span>
                           </label>
                         </li>
                       </ul>
@@ -130,16 +127,16 @@
                       <div class="containier-input-cash">
                         <div class="containier-input-block">
                           <div class="catalog-input-block">
-                            <input class="catalog-input-block-input" type="number" value="0" >
-                            <span class="catalog-input-block-text">от</span>
+                            <input class="catalog-input-block-input reset" type="number" value="0" >
+                            <span class="catalog-input-block-text block-reset">от</span>
                           </div>
                           <div class="catalog-input-block right">
-                              <input class="catalog-input-block-input" type="number" value="9000" >
-                              <span class="catalog-input-block-text">до</span>
+                              <input class="catalog-input-block-input reset" type="number" value="9000" >
+                              <span class="catalog-input-block-text block-reset">до</span>
                           </div>
                         </div>
                         <div class="slider">
-                          <input class="input-range" type="range" name="range" min="0" max="9000">
+                          <input class="input-range reset" type="range" name="range" min="0" max="9000">
                         </div>
                       </div>
                     </div>
@@ -185,50 +182,50 @@
                   <div class="list-hotel">
                     <img class="hotel-photo" src="images/catalog/Amara-Resort-&-Spa.jpg " width="300" height="212" alt="Amara Resort & Spa.">
                       <h3 class="card-list-title reset">Amara Resort & Spa</h3>
-                      <span class="name">Гостиница</span>
-                      <span class="price">От 4000 ₽</span>
+                      <span class="name block-reset">Гостиница</span>
+                      <span class="price block-reset">От 4000 ₽</span>
                       <a class="button button-more" href="#">Подробнее</a>
                       <button class="button-favourite block-button" type="button">
                         В избранное
                       </button>
                       <img src="./images/catalog/4stars.svg" width="140" height="37" alt="4stars.">
-                      <span class="button-rating"> Рейтинг: 8,5</span>
+                      <span class="button-rating block-reset"> Рейтинг: 8,5</span>
                     </div>
                     <div class="list-hotel">
                       <img class="hotel-photo" src="images/catalog/Villas-at-Poco-Diablo.jpg" width="300" height="212" alt="Villas at Poco Diablo.">
                        <h3 class="card-list-title reset" >Villas at Poco Diablo</h3>
-                       <span class="name">Гостиница</span>
-                      <span class="price">От 5000 ₽</span>
+                       <span class="name block-reset">Гостиница</span>
+                      <span class="price block-reset">От 5000 ₽</span>
                       <a class="button button-more block-button" href="#">Подробнее</a>
                       <button class="button-favourite-green block-button" type="button">
                         В избранном
                       </button>
                        <img src="images/catalog/4stars.svg" width="140" height="37" alt="4stars.">
-                      <span class="button-rating"> Рейтинг: 9,2</span>
+                      <span class="button-rating block-reset"> Рейтинг: 9,2</span>
                     </div>
                   <div class="list-hotel">
                     <img class="hotel-photo" src="images/catalog/Desert-Quail-Inn.jpg" width="300" height="212" alt="Desert Quail Inn.">
                     <h3 class="card-list-title reset">Desert Quail Inn</h3>
-                    <span class="name">Гостиница</span>
-                    <span class="price">От 2500 ₽</span>
+                    <span class="name block-reset">Гостиница</span>
+                    <span class="price block-reset">От 2500 ₽</span>
                     <a class="button button-more" href="#">Подробнее</a>
                     <button class="button-favourite block-button" type="button">
                       В избранное
                     </button>
                     <img src="images/catalog/3stars.svg" width="140" height="37" alt="3stars.">
-                    <span class="button-rating"> Рейтинг: 6,9</span>
+                    <span class="button-rating block-reset"> Рейтинг: 6,9</span>
                   </div>
                   <div class="list-hotel">
                     <img class="hotel-photo" src="images/catalog/GreenTree-Inn.jpg" width="300" height="212" alt="GreenTree Inn.">
                     <h3 class="card-list-title reset">GreenTree Inn</h3>
-                    <span class="name">Гостиница</span>
-                    <span class="price">От 1500 ₽</span>
+                    <span class="name block-reset">Гостиница</span>
+                    <span class="price block-reset">От 1500 ₽</span>
                     <a class="button button-more" href="#">Подробнее</a>
                     <button class="button-favourite block-button" type="button">
                         В избранное
                     </button>
                   <img src="images/catalog/2stars.svg" width="140" height="37" alt="2stars.">
-                  <span class="button-rating"> Рейтинг: 5,0</span>
+                  <span class="button-rating block-reset"> Рейтинг: 5,0</span>
                 </div>
               </div>
                 <hr class="pagination-line" >
@@ -263,7 +260,7 @@
         <p class="subscribe-description-catalog reset">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label>
-              <input class="input-block-input" name="e-mail" placeholder="Ваш e-mail" type="text" required>
+              <input class="input-block-input reset" name="e-mail" placeholder="Ваш e-mail" type="text" required>
           </label>
           <button class="input-block-symbol" type="submit">Подписаться</button>
         </form>
