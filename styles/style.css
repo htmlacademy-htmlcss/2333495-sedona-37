@@ -58,12 +58,26 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.logo-link:focus{
-outline: none;
+.advantages-list {
+  display: grid;
+  list-style: none;
+  grid-template-columns: repeat(3, 400px);
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+.logo-link{
+  position: absolute;
+  top: 0;
+  left: 70px;
 }
 .logo-link:hover{
   opacity: 0.8;
 }
+.logo-link:focus{
+  outline: 1px solid #000;
+}
+
 .input-block-symbol:focus{
   opacity: 0.8;
 }
@@ -81,18 +95,14 @@ outline: none;
 }
 .page-header {
   display: flex;
-  justify-content: space-between;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-  text-transform: capitalize;
-  background-color: #ffffff;
-  color: #000000;
-  padding: 0 70px;
+  position: relative;
 }
 .navigation {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  align-items: center;
+  width: 100%;
+  margin-left: 238px;
 }
 .page-navigation {
   display: flex;
@@ -103,28 +113,22 @@ outline: none;
   position: absolute;
 }
 .page-menu {
-  width: 500px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  margin: 0;
+  list-style: none;
+  min-width: 339px;
+  max-width: 500px;
   padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
 }
 .page-menu-item a{
-  margin: 0;
-  padding: 20px 16px;
+  display: inline-block;
   text-decoration: none;
   color: #000000;
-  box-sizing: border-box;
-}
-.page-menu-item {
-  margin: 0;
-  padding: 20px 0;
-  min-height: 64px;
-  font-size: 20px;
-  line-height: 24px;
-  box-sizing: border-box;
-  color: #000000;
+  padding: 20px 16px;
 }
 .page-menu-item a:hover {
   color: #ffffff;
@@ -141,7 +145,7 @@ outline: none;
   position: absolute;
   content: "";
   left: 50%;
-  bottom: 0;
+  bottom: -1px;
   background-color: #756257;
   width: 68px;
   height: 2px;
@@ -163,9 +167,17 @@ outline: none;
 .user-menu {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  margin: 0;
+  list-style: none;
+  margin: 0 0 0 auto;
   padding: 0;
+  height: 100%;
+  max-width: calc(44px*4)
+}
+.user-menu-item-button{
+  min-width: 210px;
+  display: flex;
+  align-content: center;
+  padding: 10px 20px;
 }
 .user-menu-item-box {
   width: 88px;
@@ -189,6 +201,11 @@ outline: none;
   background-repeat: no-repeat;
   padding: 22px 12px;
   background-position: center;
+  border: none;
+  width: 44px;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
 }
 .img-heart {
   background-image: url("../images/heart.svg");
@@ -196,6 +213,11 @@ outline: none;
   padding: 22px 12px;
   background-position: center;
   position: relative;
+  border: none;
+  width: 44px;
+  height: 100%;
+  padding: 0;
+  cursor: pointer;
 }
 .button-catalog{
   border-radius: 4px;
@@ -207,6 +229,7 @@ outline: none;
   padding: 8px 35px;
   color: #FFF;
   text-decoration: none;
+  max-width: 250px;
 }
 .block-button{
 cursor: pointer;
@@ -309,10 +332,17 @@ cursor: pointer;
   height: 385px;
 }
 .advantage-item-background-blue{
-  display: flex;
   background-color: #82B3D3;
-  height: 385px;
+  display: flex;
+  grid-column: span 3;
 }
+
+.real-town-pic {
+  object-fit: cover;
+  height: 100%;
+  max-width: 800px;
+}
+
 .advantages-description-container{
   background-color: #82B3D3;
   text-align: center;
@@ -362,15 +392,12 @@ cursor: pointer;
 }
 .light {
   background-color: #83b3d31f;
-  width: 33.333%;
 }
 .blue-light {
   background-color: #83b3d333;
-  width: 33.333%;
 }
 .white{
   background-color: #FFFFFF;
-  width: 33.333%;
 }
 .black-text {
   color: black;
@@ -406,8 +433,9 @@ cursor: pointer;
   line-height: 26px;
 }
 .services-home{
-  height: 385px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .services-block-item{
   padding: 80px 85px;
@@ -711,6 +739,7 @@ opacity: 0.5;
 }
 .number-person{
   display: flex;
+  align-items: center;
 }
 .quantity{
   background-color: #F2F2F2;
@@ -821,20 +850,17 @@ margin-right: 46px;
   left: 49%;
   transform: translateX(-50%);
 }
-span{
+.block-reset{
   display: block;
 }
 /* КАТАЛОГ */
-legend, input{
-  margin: 0;
-  padding: 0;
-}
 .main-catalog-conteinier{
   background-image: url(../images/background-filter.png);
   background-repeat: no-repeat;
   padding: 35px 70px 70px 70px;
   box-sizing: border-box;
   height: 412px;
+  background-color: #a9dae9;
 }
 .hotel-catalog-title{
   margin: 0;
@@ -879,7 +905,6 @@ legend, input{
 .catalog-img-conteinier{
   margin: 0 auto;
 }
-
 .catalog-img-title{
   align-items: center;
   width: 1200px;
@@ -933,6 +958,7 @@ cursor: pointer;
   height: 20px;
   margin: 0;
   cursor: pointer;
+  flex-shrink: 0;
 }
 .control-input-radio[type="radio"]:checked {
   background-image: url(../images/catalog/radio-text.svg);
@@ -1184,7 +1210,8 @@ border: 1px solid #E6E6E6;
   display: block;
   grid-column: 2 span;
   object-fit: contain;
-  width: 300px;
+  max-width: 300px;
+  max-height: 212px;
 }
 .card-list-title{
   font-size: 24px;
@@ -1198,7 +1225,6 @@ border: 1px solid #E6E6E6;
   line-height: 28px;
   text-decoration: none;
   color: #000;
-
 }
 .name{
   font-size: 18px;
