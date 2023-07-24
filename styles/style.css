@@ -433,9 +433,8 @@ cursor: pointer;
   line-height: 26px;
 }
 .services-home{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
 }
 .services-block-item{
   padding: 80px 85px;
@@ -443,7 +442,6 @@ cursor: pointer;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  width: 33.3333%;
   align-items: center;
 }
 .services-block-item-img{
