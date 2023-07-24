@@ -58,7 +58,6 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
 .advantages-list {
   display: grid;
   list-style: none;
@@ -67,7 +66,6 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 0;
   width: 100%;
 }
-
 .logo-link{
   position: absolute;
   top: 0;
@@ -907,7 +905,6 @@ margin-right: 46px;
 .catalog-img-conteinier{
   margin: 0 auto;
 }
-
 .catalog-img-title{
   align-items: center;
   width: 1200px;
@@ -938,7 +935,6 @@ width: 20px;
 height: 20px;
 margin: 0;
 cursor: pointer;
-
 }
 .control-input[type="checkbox"]:checked  {
   background-image: url(../images/catalog/tick.svg);
@@ -1229,7 +1225,6 @@ border: 1px solid #E6E6E6;
   line-height: 28px;
   text-decoration: none;
   color: #000;
-
 }
 .name{
   font-size: 18px;
